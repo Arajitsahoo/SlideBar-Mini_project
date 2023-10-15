@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color:white;
+}
+.main_box{
+    background: url("image.jpg");
+    height: 100vh;
+                     /* vh  Stands for  view port or 100% of view port */
+    background-size: cover;
+    
+ }
+ .btn_one i{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+    transition: linear 0.4s  ;
+
+ }
+ .sidebar_menu{
+    color: white;
+    width: 190px;
+    position: absolute;
+    left: -300px;
+    height: 100vh;
+    
+    background-color: rgba(255, 255, 255, 0.1) ;
+    box-shadow:0 0 8px rgba(255, 255, 255, 0.5) ;
+    display: flex;
+    transition: linear 0.4s  ;
+
+ }
+ .logo{
+   position: absolute;
+   width: 100%;
+   line-height: 60px;
+   box-shadow:0 0 4px rgba(255, 255, 255, 0.5) ;
+   height: 60px;
+ }
+ .logo a{
+    color: white;
+    position: absolute;
+    left: 50px;
+    text-decoration: none;
+    
+    
+ }
+.btn_two i{
+    color: grey;
+    font-size: 20px;
+    position: absolute;
+    left: 165px;
+    line-height: 60px;
+    opacity: 1;
+    cursor: pointer;
+    transition: linear 0.4s  ;
+
+}
+.menu {
+   position: absolute;
+   width: 100%;
+   top: 75px;
+   line-height: 2;
+   
+}
+  .social_media {
+   padding: 0.9px;
+   position: absolute;
+   left:25% ;
+   bottom: 20px;
+   opacity: 0.5;
+} 
+.menu li{
+   margin-top: 6px ;
+   padding:14px 20px ;
+   text-decoration: none;
+   width: 150px;
+   height: 30px;
+   transition: 1s;
+}
+.menu li a{
+   text-decoration: none;
+   padding-left: 6px;
+   transition: 6s;
+}
+#check{
+   display: none;
+}
+.menu li:hover{
+   box-shadow:0 0 4px rgba(255, 255, 255, 0.5) ;
+   text-align: center;
+  
+
+}
+.btn_one i:hover{
+   font-size: 25px;
+}
+.btn_two i:hover{
+   font-size: 30px;
+}
+.social_media i:hover{
+   opacity: 1;
+   transform: scale(1.4);
+}
+#check:checked ~ .sidebar_menu{
+   left: 0px;
+}
+#check:checked ~ .btn_one{
+   /* opacity: 0; */
+   display: none;
+}
